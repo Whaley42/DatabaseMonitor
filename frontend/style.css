@@ -1,33 +1,31 @@
-html{
-    height: 100%;
-    margin: 0;
-}
+
 
 a{
     text-decoration: none;
 }
 
 body{
-    background-color: #F0F0F0;
-    display: flex;
-    border: 1px solid red;
-    height: 100%;
+    background-color: #e8ecec;
     margin: 0;
+    display: flex;
+    height: 100vh;
+    position: sticky;
+    overflow-y: hidden;
+
 }
 
 
 .navbar{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     width: 17%;
     justify-content: flex-start;
     align-content: center;
+    overflow-y: hidden;
 }
 
 .navbar h1{
     display: flex;
-    border: 1px solid red;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -37,7 +35,6 @@ body{
 
 .navbar nav{
     display: flex;
-    border: 1px solid red;
     justify-content: center;
     align-content: center;
     height: 30%;
@@ -51,7 +48,6 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
     align-content: flex-start;
     justify-content: space-evenly;
     width: 80%;
@@ -59,7 +55,6 @@ body{
 }
 
 .navbar-list li a{
-    border: 1px solid red;
     padding: 5%;
     font-size: 1.2em;
     color: grey;
@@ -73,5 +68,43 @@ body{
 
     color: #7F8487;
 
+}
 
+.main{
+    width: 83%;
+    flex-grow: 1;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.header{
+    height: 8vh;  
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #e8ecec;
+
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+
+}
+
+.overview-area{
+    height: 45vh;
+    width: 100vw;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.overview-item{
+    margin: 10px;
+    height: 50%;
+    width: 20%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgb(194, 194, 194);
 }
