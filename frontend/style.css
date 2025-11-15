@@ -96,16 +96,14 @@ body{
 
 .overview-area{
     border: 1px solid red;
-    height: 45vh;
     margin: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.overview-item{
+
+.overview-area monitor-card{
     margin: 10px;
-    height: 50%;
-    width: 20%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 2px 2px 2px rgb(194, 194, 194);
@@ -114,6 +112,8 @@ body{
     justify-content: space-evenly;
     padding: 10px;
     font-size: 25px;
+    border: 1px solid red;
+    width: 15%;
 }
 
 

@@ -25,14 +25,22 @@ const router = {
             history.pushState(null, "", route);
         }
 
-        const routePath = route.includes("?") ? route.split("?")[0] : route;
         let pageElement = null;
         for(const r of routes){
-            if(typeof r.path === "string" && r.path === routePath){
+            if(typeof r.path === "string" && r.path === route){
                 console.log("found path")
                 pageElement = new r.component();
                 break;
             }
+            else if(typeof r.path === RegExp){
+                const regExpression = r.path.exec(route)
+                if(regExpression){
+                    //TODO FINISH LOGIC
+                    pageElement = r.component()
+                    break;
+                }
+            }
+                
 
         }
 

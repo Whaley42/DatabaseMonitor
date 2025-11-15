@@ -1,4 +1,4 @@
-import router from "./services/Router.js";
+import router from "./services/router.js";
 
 window.app={
     router,
