@@ -3,7 +3,7 @@ import { routes } from "./Routes.js";
 const router = {
     init: () => {
         console.log("In the router");
-        document.querySelectorAll("a.navlink").forEach(
+        document.querySelectorAll("a").forEach(
             a => {
                 a.addEventListener("click", function (e) {
                     e.preventDefault();

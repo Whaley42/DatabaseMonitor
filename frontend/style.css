@@ -5,12 +5,13 @@ a{
 }
 
 body{
-    background-image: linear-gradient(to bottom, white, rgba(25, 244, 255, 0.2));
     margin: 0;
     display: flex;
     height: 100vh;
     position: sticky;
     overflow-y: hidden;
+    background-color: rgba(255, 255, 255, 0.99);
+
 
 }
 
@@ -22,6 +23,9 @@ body{
     justify-content: flex-start;
     align-content: center;
     overflow-y: hidden;
+    border-radius: 5px;
+    background-color: black;
+
 }
 
 .navbar h1{
@@ -29,6 +33,7 @@ body{
     justify-content: center;
     align-content: center;
     align-items: center;
+    color: white;
 
 }
 
@@ -57,17 +62,16 @@ body{
 .navbar-list li a{
     padding: 5%;
     font-size: 1.2em;
-    color: grey;
     display: flex;
     gap: 5%;
     justify-content:flex-start;
     align-content: space-evenly;
+    color: white;
 }
 
-.navbar-list li a{
-
-    color: #7F8487;
-
+.navbar-list .active{
+    background-color: rgba(193, 102, 193, 0.81);
+    border-radius: 5px;
 }
 
 .main{
@@ -82,20 +86,20 @@ body{
     position: sticky;
     top: 0;
     z-index: 5;
+    background-color: rgba(255, 255, 255, 0.99);
 
 }
 
 .content{
     height: 100vh;
     display: flex;
-    border: 1px solid red;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.99);
 
 
 }
 
 .overview-area{
-    border: 1px solid red;
     margin: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -112,8 +116,7 @@ body{
     justify-content: space-evenly;
     padding: 10px;
     font-size: 25px;
-    border: 1px solid red;
-    width: 15%;
+    width: 20%;
 }
 
 
